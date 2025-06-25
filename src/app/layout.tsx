@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./context/ThemeContext";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 
 const geistSans = Geist({
@@ -16,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Devfolio | Portfolio Website using Next.js, Tailwind CSS, and Framer Motion",
-  description: "Devfolio is a portfolio website for developers to showcase their projects and skills.",
+  title: "Praveen D R | Portfolio Website using Next.js, Tailwind CSS, and Framer Motion",
+  description: "My portfolio website  to showcase my projects and skills.",
 };
 
 export default function RootLayout({
@@ -33,7 +34,7 @@ export default function RootLayout({
           <main className="min-h-screen pt-24">
             {children}
           </main>
-          <footer>Footer</footer>
+          <Footer/>
         </ThemeProvider>
       </body>
     </html>
