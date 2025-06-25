@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaCode, FaLaptop } from 'react-icons/fa'
+import { FaCode, FaGraduationCap, FaHatCowboy, FaLaptop } from 'react-icons/fa'
 
 const About = () => {
   return (
@@ -41,6 +41,18 @@ const About = () => {
               <li>Java</li>
               <li>PHP</li>
               <li>MySQL</li>
+            </ul>
+          </div>
+
+
+          <div className='bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md '>
+            <FaGraduationCap className='h-8 w-8 text-primary mb-4'/>
+            <h3 className='text-xl font-semibold mb-2'>Tools & Others</h3>
+            <ul className='text-secondary space-y-2'>
+              <li>Git / GitHub</li>
+              <li>Docker</li>
+              <li>Postman</li>
+              <li>cPanel</li>
             </ul>
           </div>
         </div>
