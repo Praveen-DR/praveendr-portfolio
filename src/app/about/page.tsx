@@ -64,7 +64,7 @@ const About = () => {
         <div className='max-w-3xl mx-auto space-y-8'>
           <div className='bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md'>
             <h3 className='text-xl font-semibold mb-2'>Web Developer Intern</h3>
-            <p className='text-primary mb-2'>Company Name • January 2025 - Present</p>
+            <p className='text-primary mb-2'>Avarthan Innovations LLP. • January 2025 - Present</p>
             <ul className='text-secondary space-y-2 list-disc list-inside'>
               <li>Gained hands-on experience in building full-stack applications using Spring Boot, MySQL, Next.js, and Tailwind CSS</li>
               <li>Worked with Postman for API testing and validation</li>
