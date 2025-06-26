@@ -70,7 +70,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
           {/* contact info */}
           <div className='space-y-8'>
             <h2 className='text-2xl font-semibold mb-4'>Get in Touch</h2>
-            <p className='text-secondary md:w-2/3'>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+            <p className='text-secondary md:w-2/3'>I&apoch;m always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
             <div className='space-y-4'>
               <div className='flex items-center gap-4'>
                 <FaEnvelope className='w-6 h-6 text-primary' />
