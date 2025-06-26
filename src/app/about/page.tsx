@@ -88,6 +88,25 @@ const About = () => {
         </div>
       </section>
 
+
+      {/* Education section */}
+      <section className='mb-16'>
+        <h2 className='section-title'>Education</h2>
+        <div className='max-w-3xl mx-auto space-y-8'>
+          <div className='bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md'>
+            <h3 className='text-xl font-semibold mb-2'>Master of Computer Application</h3>
+            <p className='text-primary mb-2'> NMAM Institute of Technology, Nitte  • Sep 2023 - Jun 2025</p>
+            <p className='text-secondary'>Graduated with honors. Focused on software engineering and web development.</p>
+          </div>
+
+          <div className='bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md'>
+            <h3 className='text-xl font-semibold mb-2'>Bachelor of Computer Application</h3>
+            <p className='text-primary mb-2'> Govinda Dasa College, Surathkal   • Jul 2019 -  Nov 2022</p>
+          </div>
+        </div>
+      </section>
+
+
     </div>
   )
 }
