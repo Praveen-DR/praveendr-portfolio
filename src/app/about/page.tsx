@@ -10,9 +10,10 @@ const About = () => {
 
       {/* bio section */}
       <section className='mb-16'>
-        <p className='text-lg text-secondary max-w-3xl mx-auto text-center'>I&apos;m a passionate Full Stack Developer with expertise in building modern web applications.
-          With a strong foundation in both frontend and backend technologies,
-          I create seamless user experiences and robust server-side solutions.
+        <p className='text-lg text-secondary max-w-3xl mx-auto text-center'>I&apos;m a dedicated Full Stack Developer with expertise in building modern web applications.
+          With a strong foundation in both frontend and backend technologies, Passionate about coding and problem-solving.
+          I create seamless user experiences and robust server-side solutions. 
+          I am committed to delivering robust and innovative software solutions.
         </p>
       </section>
 
@@ -35,7 +36,7 @@ const About = () => {
 
           <div className='bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md '>
             <FaLaptop className='h-8 w-8 text-primary mb-4' />
-            <h3 className='text-xl font-semibold mb-2'>Frontend</h3>
+            <h3 className='text-xl font-semibold mb-2'>Backend</h3>
             <ul className='text-secondary space-y-2'>
               <li>Spring Boot</li>
               <li>Java</li>
