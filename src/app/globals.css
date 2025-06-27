@@ -42,11 +42,7 @@ a {
     @apply text-3xl font-bold mb-8 text-center;
   }
 
-  .bg-github {
-  background-image: url('/githubs.png');
-  background-size: cover;
-  background-position: center;
-}
+  
 
 } 
 

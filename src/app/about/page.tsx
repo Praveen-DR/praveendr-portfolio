@@ -271,7 +271,7 @@ export default function SkillsSection() {
       {/* Title + Description */}
       <motion.div className="text-center mb-10 space-y-4" {...fadeInUp}>
         <h2 className="text-3xl font-bold">Skills</h2>
-        <p className="font-mono text-sm text-secondary max-w-3xl mx-auto leading-relaxed">
+        <p className="font-mono text-lg text-secondary max-w-3xl mx-auto leading-relaxed">
           Proficient in Spring Boot, Tailwind CSS, Next.js, JavaScript, TypeScript, React, Docker, PostgreSQL, 
           with a strong foundation in building scalable and efficient web applications.
         </p>
