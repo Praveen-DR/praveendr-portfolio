@@ -1,7 +1,6 @@
 'use client'
 import { MoonIcon, SunIcon } from '@heroicons/react/16/solid';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { button, div } from 'motion/react-client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useState } from 'react'
