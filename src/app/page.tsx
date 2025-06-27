@@ -9,13 +9,12 @@ import ContactPage from "./contact/page";
 
 export default function Home() {
   return (
-    <>
-      <Hero/>
+    <main>
+      <Hero />
       <About/>
-      <Projects/>
-      <Blogs/>
+      <Projects />
       <ContactPage/>
-    </>
+    </main>
     
   );
 }

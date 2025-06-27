@@ -1,5 +1,4 @@
 
-
 'use client'
 
 import { FaCode, FaLaptopCode, FaGraduationCap } from 'react-icons/fa'

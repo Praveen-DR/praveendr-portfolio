@@ -3,7 +3,26 @@ import { Project } from "@/types";
 
 
 export const projects: Project[] = [
-    {
+
+      {
+        title: 'To-Do App',
+        description: 'Built a dynamic To-Do app with CRUD functionality using Next.js and Tailwind CSS.',
+        technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+        githubLink: 'https://github.com/Praveen-DR/simple-todo-app',
+        demoLink: 'https://simple-todo-app-xl59.onrender.com/',
+        image: '/projects/todoadd.png',
+      },
+
+      {
+        title: 'Portfolio Website',
+        description: 'My personal portfolio website showcasing my projects and skills.',
+        technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
+        githubLink: 'https://github.com/Praveen-DR/praveendr-portfolio',
+        demoLink: 'https://praveendr-portfolio.vercel.app/',
+        image: '/projects/portfolio.png',
+      },
+
+      {
         title: 'E-commerce Platform',
         description: 'A full-stack e-commerce platform built with Next.js, TypeScript, and Tailwind CSS.',
         technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe'],
@@ -19,14 +38,7 @@ export const projects: Project[] = [
         demoLink: 'https://demo.com',
         image: '/projects/task-manager.webp',
       },
-      {
-        title: 'Portfolio Website',
-        description: 'My personal portfolio website showcasing my projects and skills.',
-        technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/portfolio-website.jpg',
-      },
+      
       {
         title: 'Blog Platform',
         description: 'A blogging platform with user authentication and markdown support.',
