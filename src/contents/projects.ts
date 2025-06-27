@@ -23,6 +23,15 @@ export const projects: Project[] = [
       },
 
       {
+        title: 'Gym Management System',
+        description: 'REST APIs built for user management, memberships, payments, and attendance tracking. Designed scalable architecture with MySQL, JPA, and role-based access for Admin, Trainer, and Member. ',
+        technologies: ['Spring Boot', 'Next.js', 'Tailwind CSS', 'JavaScript', 'MySQL'],
+        githubLink: 'https://github.com/Praveen-DR/beastmode-fitness-studio',
+        demoLink: 'https://praveendr-portfolio.vercel.app/',
+        image: '/projects/gym.jpg',
+      },
+
+      {
         title: 'E-commerce Platform',
         description: 'A full-stack e-commerce platform built with Next.js, TypeScript, and Tailwind CSS.',
         technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe'],
@@ -71,12 +80,5 @@ export const projects: Project[] = [
         demoLink: 'https://demo.com',
         image: '/projects/recipe-finder.png',
       },
-      {
-        title: 'Expense Tracker',
-        description: 'A personal finance tracker to manage expenses and income.',
-        technologies: ['React', 'Firebase'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/expense-tracker.webp',
-      }
+      
   ];
