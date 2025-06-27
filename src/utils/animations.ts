@@ -26,9 +26,15 @@ export const staggerContainer = {
   }
 }
 
-export const cardHover = {
-  whileHover: { scale: 1.05 },
-  transition: { type: "spring", stiffness: 300 }
+export const cardHover: MotionProps = {
+  whileHover: {
+    scale: 1.05,
+    transition: {
+      type: "spring",
+      stiffness: 300,
+      damping: 20, // ✅ Required when using spring
+    },
+  }
 }
 
 export const cardHoverSmall: MotionProps = {
