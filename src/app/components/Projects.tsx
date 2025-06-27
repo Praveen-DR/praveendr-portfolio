@@ -7,7 +7,8 @@ import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 const Projects = () => {
   return (
     <>
-        <section className='py-20 container max-w-7xl mx-auto px-4'>
+        <section className='py-20'>
+            <div className='container max-w-7xl mx-auto px-4'>
             <h2 className='text-3xl font-bold mb-12 text-center'>Featured Projects</h2>
 
 
@@ -45,6 +46,7 @@ const Projects = () => {
                         </article>
                     ))
                 }
+                </div>
 
             </div>
         </section>
