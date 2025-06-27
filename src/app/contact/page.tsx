@@ -68,8 +68,7 @@ export default function Contact() {
           <motion.div {...fadeInUp}>
             <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
             <p className="text-secondary">
-              I&apos;m always open to discussing new projects, creative ideas, or
-              opportunities to be part of your visions.
+              Hi there! I&apos;m passionate about creating meaningful connections. Feel free to reach out to me for collaborations, project inquiries, or just to say hello.
             </p>
           </motion.div>
           
