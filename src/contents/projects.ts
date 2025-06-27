@@ -13,14 +13,14 @@ export const projects: Project[] = [
         image: '/projects/todoadd.png',
       },
 
-      {
-        title: 'Portfolio Website',
-        description: 'My personal portfolio website showcasing my projects and skills.',
-        technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-        githubLink: 'https://github.com/Praveen-DR/praveendr-portfolio',
-        demoLink: 'https://praveendr-portfolio.vercel.app/',
-        image: '/projects/portfolio.png',
-      },
+      // {
+      //   title: 'Portfolio Website',
+      //   description: 'My personal portfolio website showcasing my projects and skills.',
+      //   technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
+      //   githubLink: 'https://github.com/Praveen-DR/praveendr-portfolio',
+      //   demoLink: 'https://praveendr-portfolio.vercel.app/',
+      //   image: '/projects/portfolio.png',
+      // },
 
       {
         title: 'Gym Management System',

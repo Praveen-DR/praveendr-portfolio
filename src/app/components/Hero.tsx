@@ -86,15 +86,10 @@ export default function Hero() {
             {...fadeInUp}
             transition={{ delay: 0.6 }}
           >
-            
-
-
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-
-
               
               <Link
                 href="/projects"
