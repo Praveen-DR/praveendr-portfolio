@@ -292,6 +292,7 @@ export default function SkillsSection() {
             variants={fadeInUp}
             {...cardHover}
           >
+            <div className='flex flex-row space-x-6'>
             <Image
               src={img}
               alt={title}
@@ -299,7 +300,9 @@ export default function SkillsSection() {
               height={48}
               className="mb-4"
             />
-            <h3 className="text-xl font-semibold text-black dark:text-white mb-2">{title}</h3>
+            <h3 className="text-xl font-semibold text-black dark:text-white mb-2 ">{title}</h3>
+            </div>
+
             <p className="text-sm text-secondary opacity-80">{description}</p>
           </motion.div>
         ))}
