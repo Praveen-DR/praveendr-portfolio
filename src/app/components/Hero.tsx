@@ -13,13 +13,32 @@ export default function Hero() {
 
 
         <div className="max-w-3xl mx-auto text-center">
-          <motion.div
+          {/* <motion.div
             className='flex justify-center items-center mb-4'
             {...scaleIn}
             transition={{ delay: 0.2 }}
           >
             <Image src="/Profile.JPG" alt="Profile" width={100} height={100} className="rounded-full mb-4 w-40 h-40 object-cover ring-2 ring-primary" />
-          </motion.div>
+          </motion.div> */}
+
+          <motion.div
+  className="flex justify-center items-center mb-8"
+  whileHover={{ rotateY: 10, rotateX: 10, scale: 1.05 }}
+  transition={{ type: "spring", stiffness: 200, damping: 20 }}
+>
+  <div className="relative w-40 h-40 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-xl hover:shadow-blue-500/40 p-[3px] transition-all duration-300">
+    <Image
+      src="/Profile.JPG"
+      alt="Profile"
+      fill
+      className="rounded-full object-cover"
+    />
+    <div className="absolute inset-0 rounded-full ring-2 ring-transparent hover:ring-blue-400 transition-all duration-300" />
+  </div>
+</motion.div>
+
+
+
           <motion.h1
             className="text-4xl md:text-6xl font-bold mb-6"
             {...fadeInUp}
@@ -90,7 +109,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              
+
               <Link
                 href="/projects"
                 className="bg-primary inline-block w-full md:w-auto text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
@@ -113,13 +132,13 @@ export default function Hero() {
           </motion.div>
 
           <motion.a
-              whileHover={{ scale: 1.1 }}
-              href="/Praveen_DR_Resume.pdf"
-              role="link"
-              className="mt-7 font-bold inline-flex items-center justify-center gap-2 px-4 py-2 text-sm text-white transition bg-gray-800 border border-gray-600 rounded-full hover:bg-gray-900 hover:border-gray-700 hover:text-white focus:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
-            >
-              Resume
-            </motion.a>
+            whileHover={{ scale: 1.1 }}
+            href="/Praveen_DR_Resume.pdf"
+            role="link"
+            className="mt-7 font-bold inline-flex items-center justify-center gap-2 px-4 py-2 text-sm text-white transition bg-gray-800 border border-gray-600 rounded-full hover:bg-gray-900 hover:border-gray-700 hover:text-white focus:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
+          >
+            Resume
+          </motion.a>
 
         </div>
       </div>
