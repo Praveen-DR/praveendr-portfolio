@@ -21,21 +21,35 @@ export default function Hero() {
             <Image src="/Profile.JPG" alt="Profile" width={100} height={100} className="rounded-full mb-4 w-40 h-40 object-cover ring-2 ring-primary" />
           </motion.div> */}
 
-          <motion.div
-  className="flex justify-center items-center mb-8"
-  whileHover={{ rotateY: 10, rotateX: 10, scale: 1.05 }}
-  transition={{ type: "spring", stiffness: 200, damping: 20 }}
->
-  <div className="relative w-40 h-40 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-xl hover:shadow-blue-500/40 p-[3px] transition-all duration-300">
-    <Image
-      src="/Profile.JPG"
-      alt="Profile"
-      fill
-      className="rounded-full object-cover"
-    />
-    <div className="absolute inset-0 rounded-full ring-2 ring-transparent hover:ring-blue-400 transition-all duration-300" />
-  </div>
-</motion.div>
+
+<motion.div
+        className="flex justify-center items-center mb-4 cursor-pointer"
+        whileHover={{ scale: 0.9 }}
+        whileTap={{ scale: 0.6 }}
+        transition={{ type: "spring", stiffness: 200, damping: 20 }}
+      >
+        {/* Glowing wrapper */}
+        <motion.div
+          className="relative w-40 h-40 rounded-full"
+          whileHover={{
+            boxShadow: "0 0 30px 8px rgba(59,130,246,0.6)", // Tailwind blue-500 glow
+          }}
+          whileTap={{
+            boxShadow: "0 0 40px 12px rgba(59,130,246,0.7)", // Stronger glow on tap
+          }}
+          transition={{ duration: 0.2 }}
+        >
+          {/* Image fills the circle */}
+          <Image
+            src="/Profile.JPG"
+            alt="Profile"
+            fill
+            className="rounded-full object-cover border-2 border-white"
+          />
+        </motion.div>
+      </motion.div>
+
+
 
 
 
