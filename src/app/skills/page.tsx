@@ -263,7 +263,7 @@ const skills = [
 
 export default function SkillsSection() {
   return (
-    <motion.section id='about'
+    <motion.section id='skill'
       className="py-16"
       {...fadeIn}
       transition={{ delay: 0.2 }}
