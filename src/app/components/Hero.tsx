@@ -8,7 +8,7 @@ import { fadeInUp, fadeIn, scaleIn } from '@/utils/animations';
 
 export default function Hero() {
   return (
-    <section className="py-3">
+    <section id='hero'  className="py-3">
       <div className="container max-w-7xl mx-auto px-4">
 
 

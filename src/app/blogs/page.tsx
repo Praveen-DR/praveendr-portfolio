@@ -3,6 +3,7 @@ import React from 'react'
 
 const Blogs = () => {
   return (
+    <section id='blogs'>
     <div className="min-h-screen px-6 py-12 bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white transition-colors">
       {/* Hero Section */}
       <div className="max-w-4xl mx-auto text-center mb-16">
@@ -39,6 +40,7 @@ const Blogs = () => {
         </Link>
       </div>
     </div>
+    </section>
   );
 }
 export default Blogs

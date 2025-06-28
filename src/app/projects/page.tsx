@@ -6,8 +6,9 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import { fadeInUp, staggerContainer, cardHoverSmall } from '@/utils/animations'
 
-export default function Projects() {
+export default function RecentProjects() {
     return (
+        <section id='projects'>
         <div className="container max-w-7xl mx-auto py-12">
             <motion.h1
                 className="text-4xl font-bold mb-4 text-center"
@@ -122,5 +123,6 @@ export default function Projects() {
                 ))}
             </motion.div>
         </div>
+        </section>
     )
 } 

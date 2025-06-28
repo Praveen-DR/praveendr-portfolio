@@ -43,6 +43,8 @@ a {
   .section-title {
     @apply text-3xl font-bold mb-8 text-center;
   }
+
+
 } 
 
 @keyframes fadeIn {
@@ -63,4 +65,8 @@ a {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+ html {
+  scroll-behavior: smooth;
 }
