@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #007AFF; 
+  /* --color-primary: #007AFF;  */
   /* --color-primary:#228B22; /*🌸 Lavender#228B22#FACC15; */
-  /* --color-primary: #4B0082; 🌑 Dark Purple (Indigo) */
+  --color-primary: #228B22; /* 🌑 Dark Purple (Indigo) */
   --color-secondary: #6B7280;
   --color-dark: #1F2937;
   --color-light: #F9FAFB;
