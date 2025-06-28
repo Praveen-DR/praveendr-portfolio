@@ -299,7 +299,7 @@ export default function SkillsSection() {
               height={48}
               className="mb-4"
             />
-            <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
+            <h3 className="text-xl font-semibold text-black dark:text-white mb-2">{title}</h3>
             <p className="text-sm text-secondary opacity-80">{description}</p>
           </motion.div>
         ))}

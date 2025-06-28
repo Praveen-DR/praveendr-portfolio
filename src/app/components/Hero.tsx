@@ -39,7 +39,6 @@ export default function Hero() {
           }}
           transition={{ duration: 0.2 }}
         >
-          {/* Image fills the circle */}
           <Image
             src="/Profile.JPG"
             alt="Profile"
