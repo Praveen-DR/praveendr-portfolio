@@ -8,7 +8,7 @@ import { fadeInUp, fadeIn, scaleIn } from '@/utils/animations';
 
 export default function Hero() {
   return (
-    <section className="py-28">
+    <section className="py-3">
       <div className="container max-w-7xl mx-auto px-4">
 
 
@@ -24,20 +24,20 @@ export default function Hero() {
 
 <motion.div
         className="flex justify-center items-center mb-4 cursor-pointer"
-        whileHover={{ scale: 0.9 }}
-        whileTap={{ scale: 0.6 }}
+        whileHover={{ scale:1.2 }}
+        whileTap={{ scale: 1.3 }}
         transition={{ type: "spring", stiffness: 200, damping: 20 }}
       >
         {/* Glowing wrapper */}
         <motion.div
           className="relative w-40 h-40 rounded-full"
           whileHover={{
-            boxShadow: "0 0 30px 8px rgba(59,130,246,0.6)", // Tailwind blue-500 glow
+            boxShadow: "0 0 60px 8px rgba(59,130,350,0.6)", // Tailwind blue-500 glow
           }}
           whileTap={{
-            boxShadow: "0 0 40px 12px rgba(59,130,246,0.7)", // Stronger glow on tap
+            boxShadow: "0 0 40px 12px rgba(59,130,350,5.0)", // Stronger glow on tap
           }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.5 }}
         >
           <Image
             src="/Profile.JPG"
@@ -53,7 +53,7 @@ export default function Hero() {
 
 
           <motion.h1
-            className="text-4xl md:text-6xl font-bold mb-6"
+            className="text-4xl md:text-6xl font-bold mb-6 pt-2"
             {...fadeInUp}
             transition={{ delay: 0.3 }}
           >

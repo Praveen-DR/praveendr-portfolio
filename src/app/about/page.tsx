@@ -21,7 +21,7 @@
 //       >
 //         About Me
 //       </motion.h1>
-      
+
 //       {/* Bio Section */}
 //       <motion.section 
 //         className="mb-16"
@@ -67,7 +67,7 @@
 //               <li>HTML/CSS</li>
 //             </ul>
 //           </motion.div>
-          
+
 //           <motion.div 
 //             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
 //             variants={fadeInUp}
@@ -82,7 +82,7 @@
 //               <li>MySQL</li>
 //             </ul>
 //           </motion.div>
-          
+
 //           <motion.div 
 //             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
 //             variants={fadeInUp}
@@ -132,7 +132,7 @@
 //               <li>Contributed to the development and testing of real-world projects in an agile environment</li>
 //             </ul>
 //           </motion.div>
-          
+
 //           <motion.div 
 //             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
 //             variants={fadeInUp}
@@ -237,13 +237,13 @@ const skills = [
     title: 'React',
     description: 'Popular library for building component-based UIs with virtual DOM.'
   },
-  
+
   {
     img: '/images/postgres.png',
     title: 'PostgreSQL & MySQL',
     description: 'Reliable relational databases for large-scale applications.'
   },
-  
+
   {
     img: '/images/docker.png',
     title: 'Docker',
@@ -272,7 +272,7 @@ export default function SkillsSection() {
       <motion.div className="text-center mb-10 space-y-4" {...fadeInUp}>
         <h2 className="text-3xl font-bold">Skills</h2>
         <p className="font-mono text-lg text-secondary max-w-3xl mx-auto leading-relaxed">
-          Proficient in Spring Boot, Tailwind CSS, Next.js, JavaScript, TypeScript, React, Docker, PostgreSQL, 
+          Proficient in Spring Boot, Tailwind CSS, Next.js, JavaScript, TypeScript, React, Docker, PostgreSQL,
           with a strong foundation in building scalable and efficient web applications.
         </p>
       </motion.div>
@@ -291,16 +291,23 @@ export default function SkillsSection() {
             className="bg-white dark:bg-dark/50 p-6 rounded-xl shadow-md border border-neutral-800 hover:bg-gray-800 transition-transform transform hover:translate-x-1 hover:translate-y-1"
             variants={fadeInUp}
             {...cardHover}
+
+            whileTap={{
+              scale: 0.8,
+              boxShadow: '0 0 60px rgba(59, 130, 350, 0.9)' // Tailwind blue-500 glow
+            }}
+            transition={{ type: 'spring', stiffness: 300 }}
+            {...cardHover}
           >
             <div className='flex flex-row space-x-6'>
-            <Image
-              src={img}
-              alt={title}
-              width={48}
-              height={48}
-              className="mb-4"
-            />
-            <h3 className="text-xl font-semibold text-black dark:text-white mb-2 ">{title}</h3>
+              <Image
+                src={img}
+                alt={title}
+                width={48}
+                height={48}
+                className="mb-4"
+              />
+              <h3 className="text-xl font-semibold text-black dark:text-white mb-2 ">{title}</h3>
             </div>
 
             <p className="text-sm text-secondary opacity-80">{description}</p>
