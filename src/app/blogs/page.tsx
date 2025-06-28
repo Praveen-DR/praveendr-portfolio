@@ -1,76 +1,88 @@
-'use client';
+'use client'
 
-import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 const blogs = [
   {
-    title: 'Building a Fullstack App with Next.js',
-    summary: 'Step-by-step guide on creating a modern app using Next.js, Tailwind CSS, and APIs.',
-    image: 'https://source.unsplash.com/random/400x300?code',
+    title: 'How I Built My Portfolio with Next.js',
+    summary: 'A breakdown of my design process, component structure, and deployment tips.',
+    tags: ['Next.js', 'Portfolio', 'Tailwind'],
+    image: 'https://source.unsplash.com/600x400/?website,design',
     link: '#',
   },
   {
-    title: 'Dark Mode Best Practices',
-    summary: 'Design tips to implement beautiful and accessible dark themes in modern UIs.',
-    image: 'https://source.unsplash.com/random/400x300?dark',
+    title: '10 VS Code Shortcuts That Changed My Workflow',
+    summary: 'Productivity boosters every developer should know.',
+    tags: ['VS Code', 'Productivity', 'Tools'],
+    image: 'https://source.unsplash.com/600x400/?developer,workspace',
     link: '#',
   },
   {
-    title: 'Top 5 VS Code Extensions for Devs',
-    summary: 'Boost productivity with these handpicked extensions used by professionals.',
-    image: 'https://source.unsplash.com/random/400x300?editor',
+    title: 'Dark Mode Tips for Better UX',
+    summary: 'Subtle changes that improve readability and style in dark themes.',
+    tags: ['UX', 'Dark Mode', 'Design'],
+    image: 'https://source.unsplash.com/600x400/?dark,theme',
     link: '#',
   },
-];
+]
 
 export default function Blogs() {
   return (
-    <section id="blogs" className="bg-gray-50 dark:bg-gray-900 py-20 px-6">
-      <div className="max-w-7xl mx-auto text-center mb-16">
-        <motion.h1
-          className="text-4xl sm:text-5xl font-bold mb-4"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          📚 Blog Highlights
-        </motion.h1>
+    <section id="blogs" className="bg-gray-50 dark:bg-gray-950 py-20 px-6">
+      <motion.div
+        className="text-center mb-16"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <h1 className="text-4xl sm:text-5xl font-bold mb-4">📝 My Writings</h1>
         <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
-          Explore recent articles, coding tutorials, and insights into software development.
+          Sharing thoughts, tutorials, and developer stories that shaped my journey.
         </p>
-      </div>
+      </motion.div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="space-y-12 max-w-5xl mx-auto">
         {blogs.map((post, index) => (
           <motion.div
             key={post.title}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.2, duration: 0.6 }}
+            initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
             viewport={{ once: true }}
-            className="bg-white/30 dark:bg-white/5 backdrop-blur-lg rounded-2xl shadow-xl overflow-hidden border border-white/10 hover:shadow-blue-500/20 transition duration-300 group"
+            className={`flex flex-col lg:flex-row ${
+              index % 2 !== 0 ? 'lg:flex-row-reverse' : ''
+            } items-center gap-8 bg-white/10 dark:bg-white/5 backdrop-blur-lg p-6 rounded-2xl shadow-lg border border-white/10`}
           >
             <img
               src={post.image}
               alt={post.title}
-              className="w-full h-48 object-cover group-hover:scale-105 transition duration-300"
+              className="w-full lg:w-1/2 rounded-xl shadow-md object-cover h-64"
             />
-            <div className="p-6">
-              <h2 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
-                {post.title}
-              </h2>
+            <div className="flex-1">
+              <h2 className="text-2xl font-semibold mb-2">{post.title}</h2>
               <p className="text-gray-700 dark:text-gray-300 mb-4">{post.summary}</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {post.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="bg-blue-100 dark:bg-blue-800/30 text-blue-600 dark:text-blue-300 text-xs px-3 py-1 rounded-full"
+                  >
+                    #{tag}
+                  </span>
+                ))}
+              </div>
               <Link
                 href={post.link}
-                className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                className="inline-block mt-2 text-primary font-medium hover:underline"
               >
-                Read More →
+                Read Article →
               </Link>
             </div>
           </motion.div>
         ))}
       </div>
     </section>
-  );
+  )
 }
