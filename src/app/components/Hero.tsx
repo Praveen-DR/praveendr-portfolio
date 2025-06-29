@@ -53,7 +53,7 @@ export default function Hero() {
 
 
           <motion.h1
-            className="text-4xl md:text-6xl font-bold mb-6 pt-2"
+            className="text-4xl md:text-6xl font-bold mb-3 pt-1"
             {...fadeInUp}
             transition={{ delay: 0.3 }}
           >
@@ -66,7 +66,7 @@ export default function Hero() {
             </motion.span>
           </motion.h1>
           <motion.p
-            className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8"
+            className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-5"
             {...fadeInUp}
             transition={{ delay: 0.4 }}
           >
