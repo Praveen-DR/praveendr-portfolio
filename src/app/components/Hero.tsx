@@ -146,10 +146,17 @@ export default function Hero() {
           </motion.div>
 
           <motion.a
-            whileHover={{ scale: 1.1 }}
             href="https://drive.google.com/file/d/1QlXADIaUtciKNoz4R0Zbm0VG5geGQ63r/view?usp=sharing"
             role="link"
             className="mt-7 font-bold inline-flex items-center justify-center gap-2 px-4 py-2 text-sm text-white transition bg-gray-800 border border-gray-600 rounded-full hover:bg-gray-900 hover:border-gray-700 hover:text-white focus:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
+        
+            whileHover={{
+            boxShadow: "0 0 60px 8px rgba(59,246,130,0.6)", 
+          }}
+          whileTap={{
+            boxShadow: "0 0 70px 12px rgba(59,250,150,5.0)", 
+          }}
+          transition={{ duration: 0.1 }}
           >
             Resume
           </motion.a>
