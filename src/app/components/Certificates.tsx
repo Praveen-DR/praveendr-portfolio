@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { FaEye, FaEyeDropper } from 'react-icons/fa'
 
 const certificateData = [
   {
@@ -17,14 +16,12 @@ const certificateData = [
     link: '/certificates/Testing FDP Certificate.pdf',
     description: 'Attended a 5-day workshop on Current Advances in Software Testing and Applicable Tools conducted by NITTE.',
   },
-
   {
     title: 'Research Methodology and Publications workshop',
     img: '/certificates/ResearchWorkshop.png',
     link: '/certificates/test1.pdf',
     description: 'Attended a 2-day workshop on Research Methodology and Publications conducted by NITTE.',
   },
-
 ]
 
 export default function Certificates() {
@@ -50,32 +47,22 @@ export default function Certificates() {
         {certificateData.map((certificate, index) => (
           <motion.div
             key={index}
-            className="relative group rounded-xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-700 bg-white dark:bg-dark/60 backdrop-blur-md p-4 transition-all duration-300"
+            className="relative group bg-white dark:bg-dark/60 backdrop-blur-md rounded-xl border border-neutral-200 dark:border-neutral-700 p-4 transition-all duration-100"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             whileHover={{
-              scale: 1.03,
+              scale: 1.07,
+              boxShadow: '0 0 25px rgba(34,247,94,2.0)', // green-500 glow on hover
             }}
-            transition={{ type: 'spring', stiffness: 120, damping: 15 }}
+            whileTap={{
+              scale: 0.97,
+              boxShadow: '0 0 40px rgba(34,249,94,0.2)', // stronger glow on tap
+            }}
+            transition={{ type: 'spring', stiffness: 260, damping: 20 }}
             viewport={{ once: true }}
           >
-            {/* Glow Background on Hover */}
-            <motion.div
-              className="absolute inset-0 z-0 rounded-xl"
-              initial={{ opacity: 0 }}
-              whileHover={{
-                opacity: 1,
-                background:
-                  'radial-gradient(circle at center, rgba(34,297,94,0.15), transparent 60%)',
-              }}
-              whileTap={{
-                background:
-                  'radial-gradient(circle at center, rgba(34,197,94,0.25), transparent 60%)',
-              }}
-              transition={{ duration: 0.4 }}
-            ></motion.div>
-
             <div className="relative z-10 flex flex-col h-full justify-between">
+              {/* Zoom Image on Hover */}
               <motion.div
                 whileHover={{ scale: 1.09 }}
                 transition={{ duration: 0.2 }}
@@ -91,9 +78,11 @@ export default function Certificates() {
               </motion.div>
 
               <h3 className="text-lg font-semibold mb-1">{certificate.title}</h3>
-              <p className= " text-secondary dark:text-gray-300 mb-4"   >
+              <p className="text-secondary dark:text-gray-300 mb-4">
                 {certificate.description}
               </p>
+
+              {/* Centered View Certificate Button */}
               <a
                 href={certificate.link}
                 target="_blank"
@@ -102,7 +91,6 @@ export default function Certificates() {
               >
                 View Certificate
               </a>
-
             </div>
           </motion.div>
         ))}
