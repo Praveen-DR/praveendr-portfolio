@@ -1,5 +1,5 @@
 import About from "./skills/page";
-import Blogs from "./blogs/page";
+
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -11,15 +11,17 @@ import RecentProjects from "./projects/page";
 
 
 
+
 export default function Home() {
   return (
     <main>
       <Hero />
       <SkillsSection/>
       <RecentProjects/>
-      <Projects />
-      <Blogs/>
+      
+      
       <Contact/>
+    
     </main>
     
   );

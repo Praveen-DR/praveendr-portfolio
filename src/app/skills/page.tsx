@@ -288,29 +288,33 @@ export default function SkillsSection() {
         {skills.map(({ img, title, description }, index) => (
           <motion.div
             key={index}
-            className="bg-white dark:bg-dark/50 p-6 rounded-xl shadow-md border border-neutral-800 hover:bg-gray-800 transition-transform transform hover:translate-x-1 hover:translate-y-1"
+            className="relative group bg-white dark:bg-dark/50 p-6 rounded-xl border border-neutral-800 transition-all duration-40"
             variants={fadeInUp}
-            {...cardHover}
-
-            whileTap={{
-              scale: 0.8,
-              boxShadow: '0 0 60px rgba(59, 130, 350, 0.9)' // Tailwind blue-500 glow
+            whileHover={{
+              scale: 1.05,
+              boxShadow: '0 0 25px rgba(59,250,120,0.9)', // Tailwind blue-500 glow on hover
             }}
-            transition={{ type: 'spring', stiffness: 300 }}
-            {...cardHover}
+            whileTap={{
+              scale: 0.97,
+              boxShadow: '0 0 40px rgba(59,130,246,0.8)', // stronger glow on tap
+            }}
+            transition={{ type: 'spring', stiffness: 260, damping: 20 }}
           >
-            <div className='flex flex-row space-x-6'>
+            {/* Content */}
+            <div className="flex flex-row space-x-4 items-center mb-4">
               <Image
                 src={img}
                 alt={title}
                 width={48}
                 height={48}
-                className="mb-4"
               />
-              <h3 className="text-xl font-semibold text-green-900  dark:text-white mb-2 ">{title}</h3>
+              <h3 className="text-xl font-semibold transition-colors group-hover:text-primary dark:group-hover:text-primary">
+                {title}
+              </h3>
             </div>
-
-            <p className="text-sm text-secondary opacity-80">{description}</p>
+            <p className="text-sm text-secondary opacity-80 leading-relaxed">
+              {description}
+            </p>
           </motion.div>
         ))}
       </motion.div>
