@@ -56,7 +56,7 @@ export default function Certificates() {
             }}
             whileTap={{
               scale: 0.97,
-              boxShadow: '0 0 40px rgba(34,249,94,0.2)', // stronger glow on tap
+              boxShadow: '0 0 40px rgba(34,249,94,2.0)', // stronger glow on tap
             }}
             transition={{ type: 'spring', stiffness: 260, damping: 20 }}
             viewport={{ once: true }}
