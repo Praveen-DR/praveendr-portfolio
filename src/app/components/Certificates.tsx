@@ -31,7 +31,7 @@ export default function Certificates() {
   return (
     <section
       id="certificates"
-      className="container justify-center relative flex flex-col items-center px-6 py-20 font-sans text-sm font-light bg-white dark:bg-black text-black dark:text-white transition-colors duration-300"
+      className="container justify-center relative flex flex-col items-center px-6 py-15 font-sans text-sm font-light bg-white dark:bg-black text-black dark:text-white transition-colors duration-300"
     >
       <motion.div
         initial={{ opacity: 0, y: 30 }}

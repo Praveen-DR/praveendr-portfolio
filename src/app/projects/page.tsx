@@ -9,7 +9,7 @@ import { fadeInUp, staggerContainer, cardHoverSmall } from '@/utils/animations'
 export default function RecentProjects() {
     return (
         <section id='projects'>
-        <div className="container max-w-7xl mx-auto py-12">
+        <div className="container max-w-7xl mx-auto py-16">
             <motion.h1
                 className="text-4xl font-bold mb-4 text-center"
                 initial={{ opacity: 0, y: -20 }}
@@ -19,7 +19,7 @@ export default function RecentProjects() {
                 My Projects
             </motion.h1>
             <motion.p
-                className="text-lg text-secondary mb-24 text-center"
+                className="font-mono text-lg text-secondary mb-24 text-center"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
