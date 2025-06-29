@@ -32,10 +32,10 @@ export default function Hero() {
         <motion.div
           className="relative w-40 h-40 rounded-full"
           whileHover={{
-            boxShadow: "0 0 60px 8px rgba(59,130,350,0.6)", // Tailwind blue-500 glow
+            boxShadow: "0 0 60px 8px rgba(59,246,130,0.6)", // Tailwind blue-500 glow
           }}
           whileTap={{
-            boxShadow: "0 0 40px 12px rgba(59,130,350,5.0)", // Stronger glow on tap
+            boxShadow: "0 0 40px 12px rgba(59,250,150,5.0)", // Stronger glow on tap
           }}
           transition={{ duration: 0.5 }}
         >

@@ -296,7 +296,7 @@ export default function SkillsSection() {
             }}
             whileTap={{
               scale: 0.97,
-              boxShadow: '0 0 40px rgba(59,130,246,0.8)', // stronger glow on tap
+              boxShadow: '0 0 40px rgba(59,250,146,0.8)', // stronger glow on tap
             }}
             transition={{ type: 'spring', stiffness: 260, damping: 20 }}
           >
