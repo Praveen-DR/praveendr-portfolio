@@ -42,7 +42,7 @@ export default function Certificates() {
       >
         <h2 className="text-4xl font-bold">Certificates</h2>
         <p className="text-gray-600 dark:text-gray-300 max-w-2xl text-md md:text-lg font-mono">
-          Here are a few of the certifications I've earned.
+          Here are a few of the certifications I&apos;ve earned.
         </p>
       </motion.div>
 
