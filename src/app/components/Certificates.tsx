@@ -39,7 +39,7 @@ export default function Certificates() {
       >
         <h2 className="text-4xl font-bold">Certificates</h2>
         <p className="text-gray-600 dark:text-gray-300 max-w-2xl text-md md:text-lg font-mono">
-          Certifications I've earned along my journey of continuous learning and upskilling.
+          Certifications I&apos;ve earned along my journey of continuous learning and upskilling.
         </p>
       </motion.div>
 
