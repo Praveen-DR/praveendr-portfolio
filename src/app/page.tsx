@@ -1,13 +1,10 @@
-import About from "./skills/page";
 
-import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
 import Contact from "./contact/page";
 import ContactPage from "./contact/page";
 import SkillsSection from "./skills/page";
 import RecentProjects from "./projects/page";
+import Certificates from "./components/Certificates";
 
 
 
@@ -18,6 +15,7 @@ export default function Home() {
       <Hero />
       <SkillsSection/>
       <RecentProjects/>
+      <Certificates/>
       
       
       <Contact/>
