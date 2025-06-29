@@ -91,7 +91,7 @@ export default function Certificates() {
                 href={certificate.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-fit bg-green-600 hover:bg-green-700 text-white text-xs font-semibold px-5 py-3 rounded-md transition-colors"
+                className="w-fit mx-auto bg-green-600 hover:bg-green-700 text-white text-xs font-semibold px-5 py-3 rounded-md transition-colors"
               >
                 View Certificate
               </a>
