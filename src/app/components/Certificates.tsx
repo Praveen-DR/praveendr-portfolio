@@ -52,11 +52,11 @@ export default function Certificates() {
             whileInView={{ opacity: 1, y: 0 }}
             whileHover={{
               scale: 1.07,
-              boxShadow: '0 0 25px rgba(34,247,94,2.0)', // green-500 glow on hover
+              boxShadow: '0 0 25px rgba(59,247,120,2.0)', // green-500 glow on hover
             }}
             whileTap={{
               scale: 0.97,
-              boxShadow: '0 0 40px rgba(34,249,94,2.0)', // stronger glow on tap
+              boxShadow: '0 0 40px rgba(59,249,146,2.0)', // stronger glow on tap
             }}
             transition={{ type: 'spring', stiffness: 260, damping: 20 }}
             viewport={{ once: true }}

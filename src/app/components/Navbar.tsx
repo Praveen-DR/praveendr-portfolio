@@ -17,7 +17,7 @@ export default function Navbar() {
   }
 
   const menuItems = [
-    { href: '/#hero', label: 'Home' },
+    { href: '/#hero', label: 'About' },
     { href: '/#skill', label: 'Skills' },
     { href: '/#projects', label: 'Projects' },
     { href: '/#certificates', label: 'Certificates' },
