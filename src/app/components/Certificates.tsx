@@ -15,7 +15,7 @@ const certificateData = [
     title: 'Current Advances in Software Testing and Applicable Tools',
     img: '/certificates/numocity.png',
     link: '/certificates/Testing FDP Certificate.pdf',
-    description:'Attended a 5-day workshop on Current Advances in Software Testing and Applicable Tools conducted by NITTE.',
+    description: 'Attended a 5-day workshop on Current Advances in Software Testing and Applicable Tools conducted by NITTE.',
   },
 
   {
@@ -24,7 +24,7 @@ const certificateData = [
     link: '/certificates/test1.pdf',
     description: 'Attended a 2-day workshop on Research Methodology and Publications conducted by NITTE.',
   },
-  
+
 ]
 
 export default function Certificates() {
@@ -66,7 +66,7 @@ export default function Certificates() {
               whileHover={{
                 opacity: 1,
                 background:
-                  'radial-gradient(circle at center, rgba(34,197,94,0.15), transparent 60%)',
+                  'radial-gradient(circle at center, rgba(34,297,94,0.15), transparent 60%)',
               }}
               whileTap={{
                 background:
@@ -76,15 +76,22 @@ export default function Certificates() {
             ></motion.div>
 
             <div className="relative z-10 flex flex-col h-full justify-between">
-              <Image
-                src={certificate.img}
-                alt={certificate.title}
-                width={300}
-                height={200}
-                className="rounded-md object-cover w-full h-[180px] mb-4"
-              />
+              <motion.div
+                whileHover={{ scale: 1.09 }}
+                transition={{ duration: 0.2 }}
+                className="overflow-hidden rounded-md mb-4"
+              >
+                <Image
+                  src={certificate.img}
+                  alt={certificate.title}
+                  width={300}
+                  height={200}
+                  className="object-cover w-full h-[180px] transition-transform duration-300"
+                />
+              </motion.div>
+
               <h3 className="text-lg font-semibold mb-1">{certificate.title}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
+              <p className= "font-mono text-secondary dark:text-gray-300 mb-4">
                 {certificate.description}
               </p>
               <a
