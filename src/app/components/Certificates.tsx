@@ -91,7 +91,7 @@ export default function Certificates() {
               </motion.div>
 
               <h3 className="text-lg font-semibold mb-1">{certificate.title}</h3>
-              <p className= "font-mono text-secondary dark:text-gray-300 mb-4">
+              <p className= " text-secondary dark:text-gray-300 mb-4"   >
                 {certificate.description}
               </p>
               <a
