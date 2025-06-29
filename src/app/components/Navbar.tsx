@@ -137,7 +137,6 @@
 
 
 
-
 'use client'
 
 import Link from 'next/link'
@@ -166,15 +165,31 @@ export default function Navbar() {
     <div className="scroll-smooth">
       <nav className="fixed w-full bg-white/30 dark:bg-dark/30 backdrop-blur-md border-b border-white/10 dark:border-white/10 z-50">
         <div className="container max-w-7xl mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <Link href="/" className="text-xl font-bold text-primary">
-              PraveenDR-Portfolio&trade;
-            </Link>
+          <div className="flex items-center justify-between h-16 relative">
+            
+            {/* Left: Logo */}
+            <div className="flex-shrink-0">
+              <Link href="/" className="text-xl font-bold text-primary">
+                PraveenDR-Portfolio&trade;
+              </Link>
+            </div>
 
-            {/* Right Side: Theme Toggle + Mobile Menu Button */}
+            {/* Center: Desktop Menu */}
+            <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8">
+              {menuItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="hover:text-primary transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+
+            {/* Right: Theme Toggle + Mobile Toggle */}
             <div className="flex items-center space-x-2">
-              {/* Theme Toggle (Always Visible) */}
+              {/* Theme Toggle Button (Always Visible) */}
               <motion.button
                 onClick={toggleTheme}
                 className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -188,7 +203,7 @@ export default function Navbar() {
                 )}
               </motion.button>
 
-              {/* Mobile Menu Toggle Button */}
+              {/* Mobile Menu Toggle */}
               <motion.button
                 className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
                 onClick={toggleMobileMenu}
@@ -235,19 +250,6 @@ export default function Navbar() {
               </motion.div>
             )}
           </AnimatePresence>
-
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            {menuItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="hover:text-primary transition-colors"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
         </div>
       </nav>
     </div>
