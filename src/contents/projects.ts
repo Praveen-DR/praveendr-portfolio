@@ -4,6 +4,16 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
 
+      {
+        title: 'To-Do App',
+        description: 'Built a dynamic To-Do app with CRUD functionality using Next.js and Tailwind CSS.',
+        technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+        githubLink: 'https://github.com/Praveen-DR/simple-todo-app',
+        demoLink: 'https://simple-todo-app-xl59.onrender.com/',
+        image: '/projects/todoadd.png',
+      },
+
+
       
       {
         title: 'Gym Management System',
