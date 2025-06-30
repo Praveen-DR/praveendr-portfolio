@@ -19,10 +19,7 @@ export default function Footer() {
           </div>
           
           <div className="flex space-x-6">
-                        <Link href="https://www.instagram.com/smart_chain_stroker_/" className="text-2xl text-gray-600
-             hover:text-primary dark:text-gray-300 transition-colors duration-300">
-                            <FaInstagram />
-                        </Link>
+                        
                         <Link href="https://github.com/Praveen-DR" className="text-2xl text-gray-600 hover:text-primary
              dark:text-gray-300 transition-colors duration-300">
                             <FaGithub />
@@ -30,6 +27,10 @@ export default function Footer() {
                         <Link href="https://www.linkedin.com/in/praveen-d-r-201a24338/" className="text-2xl
              text-gray-600 hover:text-primary dark:text-gray-300 transition-colors duration-300">
                             <FaLinkedin />
+                        </Link>
+                        <Link href="https://www.instagram.com/smart_chain_stroker_/" className="text-2xl text-gray-600
+             hover:text-primary dark:text-gray-300 transition-colors duration-300">
+                            <FaInstagram />
                         </Link>
                         
                     </div>
