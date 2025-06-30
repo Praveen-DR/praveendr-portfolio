@@ -4,6 +4,13 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 const certificateData = [
+
+  {
+    title: 'Full Stack Developer Internship',
+    img: '/certificates/fullstackdeveloper.jpg',
+    link: '/certificates/fullstackdeveloper.jpg',
+    description: 'Completed a Full Stack Developer internship at Avarthan Innovations LLP, contributing to full-stack feature development with strong commitment and learning mindset.',
+  },
   
   {
     title: 'Current Advances in Software Testing and Applicable Tools',
@@ -17,12 +24,7 @@ const certificateData = [
     link: '/certificates/test1.pdf',
     description: 'Attended a 2-day workshop on Research Methodology and Publications conducted by NITTE.',
   },
-  {
-    title: 'Full Stack Developer Internship',
-    img: '/certificates/fullstackdeveloper.jpg',
-    link: '/certificates/fullstackdeveloper.jpg',
-    description: 'Completed a Full Stack Developer internship at Avarthan Innovations LLP, contributing to full-stack feature development with strong commitment and learning mindset.',
-  },
+  
 ]
 
 export default function Certificates() {
