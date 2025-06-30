@@ -5,18 +5,20 @@ import { motion } from 'framer-motion'
 
 const certificateData = [
 
-   {
-    title: 'Current Advances in Software Testing and Applicable Tools',
-    img: '/certificates/numocity.png',
-    link: '/certificates/Testing FDP Certificate.pdf',
-    description: 'Attended a 5-day workshop on Current Advances in Software Testing and Applicable Tools conducted by NITTE.',
-  },
+   
 
   {
     title: 'Full Stack Developer Internship',
     img: '/certificates/fullstackdeveloper.jpg',
     link: '/certificates/fullstackdeveloper.jpg',
     description: 'Completed a Full Stack Developer internship at Avarthan Innovations LLP, contributing to full-stack feature development with strong commitment and learning mindset.',
+  },
+
+  {
+    title: 'Current Advances in Software Testing and Applicable Tools',
+    img: '/certificates/numocity.png',
+    link: '/certificates/Testing FDP Certificate.pdf',
+    description: 'Attended a 5-day workshop on Current Advances in Software Testing and Applicable Tools conducted by NITTE.',
   },
   
  
