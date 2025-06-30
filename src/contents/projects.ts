@@ -4,6 +4,16 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
 
+      
+      {
+        title: 'Gym Management System',
+        description: 'REST APIs built for user management, memberships, payments, and attendance tracking. Designed scalable architecture with MySQL, JPA, and role-based access for Admin, Trainer, and Member. ',
+        technologies: ['Spring Boot', 'Next.js', 'Tailwind CSS', 'JavaScript', 'MySQL'],
+        githubLink: 'https://github.com/Praveen-DR/beastmode-fitness-studio',
+        demoLink: 'https://praveendr-portfolio.vercel.app/',
+        image: '/projects/gym.jpg',
+      },
+
       {
         title: 'To-Do App',
         description: 'Built a dynamic To-Do app with CRUD functionality using Next.js and Tailwind CSS.',
@@ -22,14 +32,6 @@ export const projects: Project[] = [
       //   image: '/projects/portfolio.png',
       // },
 
-      {
-        title: 'Gym Management System',
-        description: 'REST APIs built for user management, memberships, payments, and attendance tracking. Designed scalable architecture with MySQL, JPA, and role-based access for Admin, Trainer, and Member. ',
-        technologies: ['Spring Boot', 'Next.js', 'Tailwind CSS', 'JavaScript', 'MySQL'],
-        githubLink: 'https://github.com/Praveen-DR/beastmode-fitness-studio',
-        demoLink: 'https://praveendr-portfolio.vercel.app/',
-        image: '/projects/gym.jpg',
-      },
 
       {
         title: 'Poke Dex API',
