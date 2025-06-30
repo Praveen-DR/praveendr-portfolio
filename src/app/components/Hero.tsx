@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="container max-w-7xl mx-auto px-4">
 
 
-        <div className="max-w-6xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center">
           {/* <motion.div
             className='flex justify-center items-center mb-4'
             {...scaleIn}
