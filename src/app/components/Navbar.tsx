@@ -7,6 +7,7 @@ import { SunIcon, MoonIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/out
 import { useTheme } from '../context/ThemeContext'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
+import { label } from 'framer-motion/client'
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme()
@@ -22,6 +23,7 @@ export default function Navbar() {
     { href: '/#projects', label: 'Projects' },
     { href: '/#certificates', label: 'Certificates' },
     { href: '/#contact', label: 'Contact' },
+    { href: '/#experience', label:''}
   ]
 
   return (
