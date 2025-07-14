@@ -35,7 +35,7 @@ export default function Navbar() {
             {/* Left: Logo */}
             <div className="flex-shrink-0">
               <Link href="/" className="text-xl font-bold text-primary">
-                PraveenDR-Portfolio&trade;
+                Praveen D R.
               </Link>
             </div>
 
