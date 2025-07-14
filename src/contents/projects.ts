@@ -43,6 +43,17 @@ export const projects: Project[] = [
         image: '/projects/pokemon.jpg',
       },
 
+      
+      {
+        title: 'Responsive Calculator',
+        description: 'A responsive, modern calculator built using Next.js (App Router) and Tailwind CSS.',
+        technologies: ['Next.js', 'Tailwind CSS', 'JavaScript'],
+        githubLink: 'https://github.com/Praveen-DR/simple-calculator-nextjs',
+        demoLink: 'https://simple-calculator-nextjs-ten.vercel.app/',
+        image: '/projects/calcy.png',
+      },
+
+
       // {
       //   title: 'E-commerce Platform',
       //   description: 'A full-stack e-commerce platform built with Next.js, TypeScript, and Tailwind CSS.',
