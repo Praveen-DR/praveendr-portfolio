@@ -16,8 +16,12 @@ export default function Home() {
       <Hero />
       <SkillsSection/>
       <RecentProjects/>
+  
       <ExperienceSection/>
+      
+      <div className="h-16 md:h-24 w-full"></div>
       <Certificates/>
+      
       
       
       <Contact/>

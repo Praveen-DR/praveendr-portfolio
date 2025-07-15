@@ -14,3 +14,14 @@ export interface Blog{
     readTime: string;
     slug: string;
 }
+
+export interface Experience {
+    role: string;
+    company: string;
+    location: string;
+    duration: string;
+    description: string[];
+    technologies: string[];
+    logo: string; 
+    link?: string;
+}
