@@ -6,13 +6,19 @@ export const experiences: Experience[] = [
         company: "Avarthan Innovations LLP",
         location: "On-site",
         duration: "Jan 2025 – Present",
-        description: ["Gained hands-on experience in building full-stack applications using Spring Boot, MySQL, Next.js, and Tailwind CSS. Worked on real-time projects involving backend API development,frontend integration, and database management.",
-            " I also learned API testing using Postman and explored microservices architecture along with containerization using Docker.",
-        
+        description: [
+            "Developed and integrated RESTful APIs using Spring Boot and MySQL for scalable backend systems.",
+            "Built responsive front-end interfaces with Next.js and Tailwind CSS, enhancing user experience across devices.",
+            "Collaborated on real-time web application projects with full-stack architecture and cross-functional teamwork.",
+            "Performed API testing using Postman to ensure reliability and correctness of backend services.",
+            "Gained exposure to microservices architecture, emphasizing modular, scalable backend design.",
+            "Containerized applications using Docker to streamline deployment and environment consistency.",
+            "Participated in Agile development processes, including code reviews and sprint planning.",
         ],
-        technologies: ["Spring Boot", "Java", "Microservices", "Next.js","MySQL", "React", "Tailwind CSS", "JavaScript", "REST API", "Postman", "Docker"],
+
+        technologies: ["Spring Boot", "Java", "Microservices", "Next.js", "MySQL", "React", "Tailwind CSS", "JavaScript", "REST API", "Postman", "Docker"],
         logo: "/images/avarthan.webp",
-        link: "https://www.avarthan.com", 
+        link: "https://www.avarthan.com",
     },
 
     {
@@ -20,13 +26,17 @@ export const experiences: Experience[] = [
         company: "GlowTouch Technologies Private Limited (Now UnifyCX)",
         location: "On-site",
         duration: "Nov 2022 – Jul 2023",
-        description: ["Built user dashboards using React and Tailwind CSS, integrated REST APIs, and ensured responsive design for better user experience.",
-            "jhkhghg"
-
+        description: [
+            "Provided technical assistance to customers of leading hosting brands (HostGator, Website Builder, Site Builder, Gator Builder) via email and chat.",
+            "Demonstrated expertise in troubleshooting server issues and ensuring smooth operations.",
+            "Developed excellent communication skills through effective customer interactions.",
+            "Guided clients through technical solutions and escalated unresolved issues to appropriate teams.",
+            "Managed customer complaints, provided timely solutions, and ensured resolution with proper documentation.",
+            "Collaborated with team members to meet service level targets and ensure customer satisfaction.",
         ],
-        technologies: ["Wordpress","DNS Management", "Troubleshooting", "Web Hosting", "cPanel","Debugging","Communication", "FTP","Linux"],
+        technologies: ["Wordpress", "DNS Management", "Troubleshooting", "Web Hosting", "cPanel", "Debugging", "Communication", "FTP", "Linux"],
         logo: "/images/unifycx.jpeg",
-        link: "https://www.glowtouch.com/", 
+        link: "https://www.glowtouch.com/",
     },
-    
+
 ];
