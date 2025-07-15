@@ -115,10 +115,10 @@ export default function Contact() {
               whileHover={{ x: 10 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <FaMapMarkerAlt className="h-6 w-6 text-primary" />
+              <FaMapMarkerAlt className="h-6 w-6 text-primary " />
               <div>
                 <h3 className="font-semibold">Location</h3>
-                <p className="text-secondary">Mangalore, DK, Karnataka – 575014</p>
+                <p className="text-secondary hover:text-primary">Mangalore, DK, Karnataka – 575014</p>
               </div>
             </motion.div>
           </motion.div>
