@@ -44,14 +44,14 @@ export const projects: Project[] = [
       },
 
       
-      {
-        title: 'Responsive Calculator',
-        description: 'A responsive, modern calculator built using Next.js (App Router) and Tailwind CSS.',
-        technologies: ['Next.js', 'Tailwind CSS', 'JavaScript'],
-        githubLink: 'https://github.com/Praveen-DR/simple-calculator-nextjs',
-        demoLink: 'https://simple-calculator-nextjs-ten.vercel.app/',
-        image: '/projects/calcy.png',
-      },
+      // {
+      //   title: 'Responsive Calculator',
+      //   description: 'A responsive, modern calculator built using Next.js (App Router) and Tailwind CSS.',
+      //   technologies: ['Next.js', 'Tailwind CSS', 'JavaScript'],
+      //   githubLink: 'https://github.com/Praveen-DR/simple-calculator-nextjs',
+      //   demoLink: 'https://simple-calculator-nextjs-ten.vercel.app/',
+      //   image: '/projects/calcy.png',
+      // },
 
 
       // {
