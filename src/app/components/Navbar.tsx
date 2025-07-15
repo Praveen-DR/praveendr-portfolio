@@ -20,10 +20,10 @@ export default function Navbar() {
   const menuItems = [
     { href: '/#hero', label: 'About' },
     { href: '/#skill', label: 'Skills' },
+    { href: '/#experience', label:'Experience'},
     { href: '/#projects', label: 'Projects' },
     { href: '/#certificates', label: 'Certificates' },
-    { href: '/#contact', label: 'Contact' },
-    { href: '/#experience', label:''}
+    { href: '/#contact', label: 'Contact' }    
   ]
 
   return (

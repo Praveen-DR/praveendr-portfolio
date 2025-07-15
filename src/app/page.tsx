@@ -5,6 +5,7 @@ import ContactPage from "./contact/page";
 import SkillsSection from "./skills/page";
 import RecentProjects from "./projects/page";
 import Certificates from "./components/Certificates";
+import ExperienceSection from "./components/ExperienceSection";
 
 
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <SkillsSection/>
       <RecentProjects/>
+      <ExperienceSection/>
       <Certificates/>
       
       
