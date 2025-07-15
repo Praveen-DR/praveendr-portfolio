@@ -218,6 +218,12 @@ const skills = [
     description: 'Versatile language for building interactive and dynamic web apps.'
   },
   {
+  img: '/images/nextjs-icon.png',
+  title: 'NextJS',
+  description: 'React-based framework for building fast, scalable web apps.'
+  },
+
+  {
     img: '/images/tailwind.jpeg',
     title: 'Tailwind CSS',
     description: 'A utility-first CSS framework that enables rapid UI development by composing styles directly in HTML classes, promoting consistency and maintainability.'
