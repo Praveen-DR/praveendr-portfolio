@@ -15,15 +15,10 @@ export default function Home() {
     <main>
       <Hero />
       <SkillsSection/>
-      <RecentProjects/>
-  
       <ExperienceSection/>
-      
+      <RecentProjects/>
       <div className="h-16 md:h-24 w-full"></div>
       <Certificates/>
-      
-      
-      
       <Contact/>
     
     </main>
