@@ -16,7 +16,9 @@ export const experiences: Experience[] = [
             "Participated in Agile development processes, including code reviews and sprint planning.",
         ],
 
-        
+        technologies: ["Spring Boot", "Java", "Microservices", "Next.js", "MySQL", "React", "Tailwind CSS", "JavaScript", "REST API", "Postman", "Docker"],
+        logo: "/images/avarthan.webp",
+        link: "https://www.avarthan.com",
     },
 
     {
