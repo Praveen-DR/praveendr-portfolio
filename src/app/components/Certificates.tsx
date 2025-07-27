@@ -15,6 +15,14 @@ const certificateData = [
   },
 
   {
+    title: 'Postman API Fundamentals Student Expert certification',
+    img: '/certificates/postman certificate.png',
+    link: 'https://badgr.com/public/assertions/Ib_1gEq4S-SSF-J-g9059Q',
+    description: 'Gained hands-on experience in working with APIs using Postman. Learned how to send requests, test responses, and automate workflows with real-world API.',
+  },
+  
+
+  {
     title: 'Current Advances in Software Testing and Applicable Tools',
     img: '/certificates/numocity.png',
     link: '/certificates/Testing FDP Certificate.pdf',
@@ -28,6 +36,7 @@ const certificateData = [
     link: '/certificates/test1.pdf',
     description: 'Attended a 2-day workshop on Research Methodology and Publications conducted by NITTE.',
   },
+
   
 ]
 
