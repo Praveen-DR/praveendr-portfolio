@@ -158,7 +158,7 @@ export default function Hero() {
           }}
           transition={{ duration: 0.1 }}
           >
-            Resume
+            Download CV
           </motion.a>
 
         </div>
